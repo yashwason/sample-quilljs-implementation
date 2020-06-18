@@ -5,11 +5,12 @@ const quill = new Quill(`#editor`, {
     theme: `snow`,
     debug: `error`,
     placeholder: `Enter content`,
-    formats: [`bold`, `italic`, `link`, `underline`],
+    formats: [`bold`, `italic`, `link`, `underline`, `script`, `align`, `image`],
     modules: {
         toolbar: [
             [`bold`, `italic`, `underline`],
-            [`link`]
+            [`link`, `script`],
+            [`image`]
         ]
     }
 });
